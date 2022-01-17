@@ -3,12 +3,17 @@
         font-size: 38px;
     }
 
+.header_main {
+    top: -12rem;
+}
     .header_main ul {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        width: 80%;
         max-width: 98%;
         margin-left: auto;
         margin-right: auto;
+        margin: 4rem auto;
     }
     .header_main p {
         max-width: 550px;
@@ -32,6 +37,9 @@
 }
 
 @media screen and (min-width: 1000px) {
+    h1 {
+        font-size: 43px;
+    }
     .header_main {
         grid-column: 1/4;
     }
