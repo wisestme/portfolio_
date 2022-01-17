@@ -28,7 +28,28 @@
     }
     h1 {
         max-width: 780px;
+    }  
+}
+
+@media screen and (min-width: 1000px) {
+    .header_main {
+        grid-column: 1/4;
     }
 
-    
+    .header_main ul {
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .header_main li {
+        display: contents;
+    }
+
+    .header_main li+li::before {
+        content: '|';
+        color: #00f;
+        border: 0.2px solid;
+        background-color: #00f;
+    }
 }
