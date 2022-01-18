@@ -42,6 +42,10 @@ header > .container {
     grid-template-rows: 1fr 1fr;
 }
 
+header img:first-child {
+    width: 150px;
+}
+
 .header_top {
     grid-column: 1/4;  
 }
