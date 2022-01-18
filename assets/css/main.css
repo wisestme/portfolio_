@@ -44,6 +44,11 @@ header > .container {
 
 header img:first-child {
     width: 150px;
+    margin-bottom: 3px;
+}
+
+header figure {
+    text-align: center;
 }
 
 .header_top {
