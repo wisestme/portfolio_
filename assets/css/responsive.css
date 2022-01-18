@@ -28,6 +28,22 @@
 }
 
 @media screen and  (min-width: 800px) {
+    .no_display_small {
+        display: inline-block;
+    }
+
+    .no_display_large {
+        display: none;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+        margin-left: 1.5rem;
+        font-weight: bolder;
+        letter-spacing: 1px;
+        font-size: 18px;
+    }
     .header_main {
         grid-column: 1/3;
     }
