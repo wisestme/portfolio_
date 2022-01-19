@@ -20,6 +20,11 @@
     display: none;
 }
 
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
 li {
     list-style-type: none;
 }
@@ -111,7 +116,7 @@ header figure {
 
 /* ASIDE */
 /* Coming Soon Modal */
-#soon_modal {
+#soon_modal, .navigation_modal {
     width: 100vw;
     height: 100vh;
     align-items: center;
@@ -122,4 +127,12 @@ header figure {
     background: #000;
     color: #fff;
     transition: 0.5s;
+    z-index: 1;
+}
+
+.navigation_modal nav {
+    width: 80%;
+    margin: 4rem auto;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
 }
