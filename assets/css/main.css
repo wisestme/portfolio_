@@ -108,3 +108,18 @@ header figure {
     opacity: 0.6;
     cursor: pointer;
 }
+
+/* ASIDE */
+/* Coming Soon Modal */
+#soon_modal {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    background: #000;
+    color: #fff;
+    transition: 0.5s;
+}
