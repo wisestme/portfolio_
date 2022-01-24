@@ -141,7 +141,6 @@ header figure {
 .navigation_modal > .container {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    border: 2px solid red;
     height: 80vh;
 }
 .navigation_modal nav {
@@ -153,7 +152,6 @@ header figure {
 
 .navigation_modal .social {
     grid-row: 4/5;
-    border: 2px solid red;
     grid-column: 2/3;
     justify-content: space-evenly;
     align-items: center;
