@@ -29,6 +29,15 @@ li {
     list-style-type: none;
 }
 
+.fa {
+    color: #fff;
+}
+
+.fa-times {
+    display: none;
+    z-index: 2;
+}
+
 
 /* Header */
 header {

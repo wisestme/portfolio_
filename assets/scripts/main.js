@@ -16,7 +16,17 @@ if(allSoon) {
     allSoon.forEach(soon => {
         soon.addEventListener('click', () => {
             soonModal.style.top = 0;
+            modalCloseIcon.style.display = 'block';
         })
     });
+}
+
+// Close modal
+let modalCloseIcon = document.querySelector('.fa-times');
+
+if(modalCloseIcon) {
+    modalCloseIcon.addEventListener('click', () => {
+        alert('Close modal')
+    })
 }
 
