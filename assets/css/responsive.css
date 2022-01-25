@@ -53,6 +53,9 @@
     .service_cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .service_card:first-of-type {
