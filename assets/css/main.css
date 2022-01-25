@@ -156,6 +156,7 @@ header figure {
     height: 210px;
     width: 70%;
     box-shadow: 2px 2px 5px #ccc;
+    max-width: 350px;
 }
 
 .service_card > p {
