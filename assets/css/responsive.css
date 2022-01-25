@@ -48,7 +48,16 @@
     }
     h1 {
         max-width: 780px;
-    }  
+    }
+    
+    .service_cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service_card:first-of-type {
+        margin-top: 3rem;
+    }
 }
 
 @media screen and (min-width: 1000px) {
