@@ -79,6 +79,7 @@ header img:first-child {
 
 header figure {
     text-align: center;
+    border: 2px solid red;
 }
 
 .header_top {
@@ -212,4 +213,34 @@ footer > #wrapper {
 
 footer > #wrapper > * {
     margin-bottom: 4rem;
+}
+
+.footer_summary {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer_summary > .logo {
+    grid-column: 1/2;
+}
+
+.footer_summary > .text {
+    grid-column: 1/4;
+    width: 90%;
+}
+
+.footer_summary figure {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.footer_summary img {
+    width: 120px;
+}
+
+.footer_summary figcaption {
+    text-align: center;
+}
+
+.test {
+    border: 2px solid red;
 }
