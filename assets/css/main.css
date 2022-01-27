@@ -79,7 +79,6 @@ header img:first-child {
 
 header figure {
     text-align: center;
-    border: 2px solid red;
 }
 
 .header_top {
@@ -209,6 +208,7 @@ footer > #wrapper {
     background-color: #00f;
     padding: 2rem;
     color: #fff;
+    line-height: 1.4rem;
 }
 
 footer > #wrapper > * {
