@@ -1,3 +1,8 @@
+:root {
+    --main-color: #00f;
+    --light-shadow: #ccc;
+    --light: #fff;
+}
 * {
     padding: 0;
     margin: 0;
@@ -26,7 +31,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: var(--light);
 }
 
 li {
@@ -34,7 +39,7 @@ li {
 }
 
 .fa {
-    color: #fff;
+    color: var(--light);
 font-size: 30px;}
 
 .fa-times {
@@ -57,7 +62,7 @@ h2 {
 
 /* Header */
 header {
-    color: #fff;
+    color: var(--light);
     padding: 1rem;
     background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0, 0.8)), url("../images/header_back.jpg");
     background-position: center;
@@ -121,9 +126,9 @@ header figure {
 
 .header_main button {
     padding: 0.5rem 1rem;
-    background-color: #00f;
+    background-color: var(--main-color);
     border: hidden;
-    color: #fff;
+    color: var(--light);
     font-weight: bolder;
     font-size: 16px;
     margin: 2rem auto;
@@ -138,7 +143,7 @@ header figure {
 /* MAIN */
 /* Services */
 .service_card i {
-    color: #00f;
+    color: var(--main-color);
 }
 
 .services {
@@ -154,12 +159,12 @@ header figure {
 }
 
 .service_card  {
-    border: 2px solid #ccc;
+    border: 2px solid var(--light-shadow);
     border-radius: 15px;
     padding: 1rem;
     height: 210px;
     width: 70%;
-    box-shadow: 2px 2px 5px #ccc;
+    box-shadow: 2px 2px 5px var(--light-shadow);
     max-width: 350px;
 }
 
@@ -179,7 +184,7 @@ header figure {
     top: -100vh;
     left: 0;
     background: #000;
-    color: #fff;
+    color: var(--light);
     transition: 0.5s;
     z-index: 1;
 }
@@ -205,9 +210,9 @@ header figure {
 
 /* FOOTER */
 footer > #wrapper {
-    background-color: #00f;
+    background-color: var(--main-color);
     padding: 2rem;
-    color: #fff;
+    color: var(--light);
     line-height: 1.4rem;
 }
 
@@ -221,6 +226,11 @@ footer > #wrapper > * {
 
 .footer_summary > .logo {
     grid-column: 1/2;
+}
+
+footer h2 {
+    margin-bottom: 0.2rem;
+    text-align: left;
 }
 
 .footer_summary > .text {
