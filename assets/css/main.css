@@ -57,14 +57,7 @@ li {
 
 .fa {
     color: var(--light);
-font-size: 30px;}
-
-.fa-times {
-    position: fixed;
-    top: 35px;
-    right: 20px;
-    display: none;
-    z-index: 2;
+font-size: 30px;
 }
 
 section {
@@ -111,6 +104,40 @@ header figure {
     justify-content: space-between;
     padding-top: 1rem;
 }
+
+.hamburger_menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: var(--on_primary);
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  /* Rotate first bar */
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+    transform: rotate(-45deg) translate(-9px, 6px) ;
+  }
+  
+  /* Fade out the second bar */
+  .change .bar2 {
+    opacity: 0;
+  }
+  
+  /* Rotate last bar */
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+    transform: rotate(45deg) translate(-8px, -8px) ;
+  }
 
 .header_main {
     position: relative;
@@ -192,7 +219,7 @@ header figure {
 
 /* ASIDE */
 /* Coming Soon Modal */
-#soon_modal, .navigation_modal {
+.soon_modal, .navigation_modal {
     width: 100vw;
     height: 100vh;
     align-items: center;
@@ -211,6 +238,12 @@ header figure {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     height: 80vh;
 }
+
+.nav_modal_show,
+.modal_show {
+    top: 0;
+}
+
 .navigation_modal nav {
     grid-column: 2/3;
     grid-row: 2/3;

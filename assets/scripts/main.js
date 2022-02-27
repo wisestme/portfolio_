@@ -6,51 +6,34 @@ let hamburgerMenu = document.querySelector('.hamburger_menu');
 let navigationModal = document.querySelector('.navigation_modal');
 if(hamburgerMenu) {
     hamburgerMenu.addEventListener('click', () => {
-        navigationModal.style.top = 0;
-        showCloseIcon();
+        // navigationModal.style.top = 0;
+        if(hamburgerMenu.classList.contains('change')) {
+            modal.forEach(element => {
+                element.classList.remove('modal_show');
+            });
+            } else {
+                navigationModal.classList.add('modal_show');
+            }
+            hamburgerMenu.classList.toggle('change');
+        
+
+         
     })
 }
 
-// show soon modal
-let allSoon = document.querySelectorAll('.soon');
-let soonModal = document.querySelector('#soon_modal');
-console.log(allSoon)
+let soon = document.querySelectorAll('.soon');
+let soonModal = document.querySelector('#soon_modal'); 
 
-if(allSoon) {
-    allSoon.forEach(soon => {
-        soon.addEventListener('click', () => {
-            soonModal.style.top = 0;
-            showCloseIcon();
-        })
-    });
+soon.forEach(element => {
+    element.addEventListener('click', showSoonModal);
+});
+
+function showSoonModal () {
+    if(hamburgerMenu.classList.contains('change')) {
+        soonModal.classList.remove('modal_show');
+        } else {
+            soonModal.classList.add('modal_show');
+        }
+        hamburgerMenu.classList.add('change');
+     
 }
-
-// Hide modal
-function hideModal() {
-    modal.forEach(element => {
-        element.style.top = '-100vh'
-    });
-}
-
-// Close icon
-
-// Close modal
-let modalCloseIcon = document.querySelector('.fa-times');
-
-// Hide close icon
-function hideCloseIcon() {
-    modalCloseIcon.style.display = 'none';
-}
-
-// Show close icon
-function showCloseIcon() {
-    modalCloseIcon.style.display = 'block';
-}
-
-if(modalCloseIcon) {
-    modalCloseIcon.addEventListener('click', () => {
-        hideModal();
-        hideCloseIcon();
-    })
-}
-
