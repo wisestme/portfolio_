@@ -30,6 +30,7 @@
 @media screen and  (min-width: 800px) {
     .no_display_small {
         display: inline-block;
+        margin-right: 2rem;
     }
 
     .no_display_large {
@@ -83,8 +84,8 @@
 
     .header_main li+li::before {
         content: '|';
-        color: #00f;
+        color: var(--primary_color);
         border: 0.2px solid;
-        background-color: #00f;
+        background-color: var(--primary_color);
     }
 }
