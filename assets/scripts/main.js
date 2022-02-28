@@ -1,5 +1,6 @@
 // MODAL
 let modal = document.querySelectorAll('.modal');
+const overlay = document.getElementById('overlay');
 
 // Show Hamburger Menu
 let hamburgerMenu = document.querySelector('.hamburger_menu');
@@ -14,6 +15,8 @@ if(hamburgerMenu) {
             } else {
                 navigationModal.classList.add('modal_show');
             }
+            toggleNav();
+
             hamburgerMenu.classList.toggle('change');
         
 
@@ -37,3 +40,40 @@ function showSoonModal () {
         hamburgerMenu.classList.add('change');
      
 }
+
+const navItems = document.querySelectorAll('[class^="slide_"]');
+
+// Control navigation animation
+function navAnimation(direction1, direction2) {
+    navItems.forEach((nav, i) => {
+        nav.classList.replace(`slide_${direction1}_${i + 1}`, `slide_${direction2}_${i + 1}`);
+    })
+}
+
+function toggleNav() {
+    // Toggle: Menu Bars Open/Closed
+    //menuBars.classList.toggle('change');
+
+    // show/hide menu
+    overlay.classList.toggle('overlay_active');
+    if(overlay.classList.contains('overlay_active')) {
+        // animate-in overlay
+        overlay.classList.replace('overlay_slide_left', 'overlay_slide_right');
+
+        // animate-in nav items
+        navAnimation('out', 'in');
+    } else {
+        // animate-out overlay
+        overlay.classList.replace('overlay_slide_right', 'overlay_slide_left');
+        
+        // animate-out nav items
+        navAnimation('in', 'out')
+    }
+}
+
+// Event listeners
+
+
+navItems.forEach((navItem) => {
+    navItem.addEventListener('click', toggleNav);
+})

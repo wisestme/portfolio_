@@ -234,9 +234,8 @@ header figure {
 }
 
 .navigation_modal > .container {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    height: 80vh;
+    
+    height: 100vh;
 }
 
 .nav_modal_show,
@@ -245,17 +244,132 @@ header figure {
 }
 
 .navigation_modal nav {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
+    width: 100vw;
+    flex-direction: column;
+    height: 80%;
+}
+
+.navigation_modal li {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay_slide_right {
+    transform: translateX(0);
+    transition: all 0.4s ease-in-out;
+}
+
+.overlay_slide_left {
+    transform: translateX(-100vw);
+    transition: all 0.8s ease-in-out;
+}
+
+nav li a:hover {
+    transform: scale(1.2)
+}
+
+nav li a::before {
+    content: "";
+    width: 25vw;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 47.5%;
+    left: 0;
+    opacity: 0;
+}
+
+nav li a:hover::before {
+    opacity: 1;
+}
+
+.navigation_modal li:nth-child(1) {
+    background-color: var(--primary_color);
+}
+
+.navigation_modal li:nth-child(2) {
+    background-color: var(--secondary_color);
+}
+
+.navigation_modal li:nth-child(3) {
+    background-color: var(--primary_varaint);
+}
+
+.navigation_modal li:nth-child(4) {
+    background-color: var(--primary_color);
 }
 
 .navigation_modal .social {
-    grid-row: 4/5;
-    grid-column: 2/3;
+    border: 2px solid red;
+    width: 100%;
     justify-content: space-evenly;
     align-items: center;
+    height: 20%;
+}
+
+/* Slide in animation with delay for each nav item */
+.slide_in_1 {
+    animation: slide_in 0.2s linear 0.2s  both;
+}
+
+.slide_in_2 {
+    animation: slide_in 0.4s linear 0.4s  both;
+}
+
+.slide_in_3 {
+    animation: slide_in 0.4s linear 0.6s  both;
+}
+
+.slide_in_4 {
+    animation: slide_in 0.4s linear 0.8s  both;
+}
+
+.slide_in_5 {
+    animation: slide_in 0.4s linear 1s  both;
+}
+
+@keyframes slide_in {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+/* Slide out animation with delay for each nav item */
+.slide_out_1 {
+    animation: slide_out 0.3s linear 0.5s  both;
+}
+
+.slide_out_2 {
+    animation: slide_out 0.3s linear 0.4s  both;
+}
+
+.slide_out_3 {
+    animation: slide_out 0.3s linear 0.3s  both;
+}
+
+.slide_out_4 {
+    animation: slide_out 0.3s linear 0.2s  both;
+}
+
+.slide_out_5 {
+    animation: slide_out 0.3s linear 0.1s  both;
+}
+
+@keyframes slide_out {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 /* FOOTER */
