@@ -77,5 +77,12 @@ function toggleNav() {
 
 
 navItems.forEach((navItem) => {
-    navItem.addEventListener('click', toggleNav);
+    navItem.addEventListener('click', () => {
+        toggleNav();
+        overlay.classList.remove('modal_show');
+        navigationModal.classList.remove('modal_show');
+        hamburgerMenu.classList.remove('change');
+        overlay.classList.remove('overlay_active');
+
+    });
 })
