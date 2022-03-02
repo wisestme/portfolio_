@@ -28,17 +28,19 @@ let soon = document.querySelectorAll('.soon');
 let soonModal = document.querySelector('#soon_modal'); 
 
 soon.forEach(element => {
-    element.addEventListener('click', showSoonModal);
+    element.addEventListener('click', toggleSoonModal);
 });
 
-function showSoonModal () {
+function toggleSoonModal () {
     if(hamburgerMenu.classList.contains('change')) {
         soonModal.classList.remove('modal_show');
+
         } else {
             soonModal.classList.add('modal_show');
-        }
         hamburgerMenu.classList.add('change');
-     
+
+        }
+     toggleNav();
 }
 
 const navItems = document.querySelectorAll('[class^="slide_"]');
