@@ -7,6 +7,7 @@
     --on_background_alt: rgba(66, 66, 66, 0.7);
     --background: rgb(255, 255, 255);
     --box_shadow: 0 5px 20px 1px rgba(0, 0, 0, 0.5);
+    --accent: #015896;
 }
 
 [data-theme = "dark"] {
@@ -117,7 +118,7 @@ header figure {
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: var(--on_primary);
+    background-color: var(--accent);
     margin: 6px 0;
     transition: 0.4s;
   }
@@ -170,7 +171,7 @@ header figure {
 
 .header_main button {
     padding: 0.5rem 1rem;
-    background-color: var(--primary_color);
+    background-color: var(--accent);
     border: hidden;
     color: var(--light);
     font-weight: bolder;

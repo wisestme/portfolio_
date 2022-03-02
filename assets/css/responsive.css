@@ -84,8 +84,8 @@
 
     .header_main li+li::before {
         content: '|';
-        color: var(--primary_color);
+        color: var(--accent);
         border: 0.2px solid;
-        background-color: var(--primary_color);
+        background-color: var(--accent);
     }
 }
