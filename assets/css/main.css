@@ -303,7 +303,6 @@ nav li a:hover::before {
 }
 
 .navigation_modal .social {
-    border: 2px solid red;
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
