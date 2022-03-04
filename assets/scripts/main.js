@@ -86,3 +86,16 @@ navItems.forEach((navItem) => {
 
     });
 })
+
+// Toggle Light/Dark Mode
+const toggleSwitch = document.getElementById('checkbox');
+
+function switchMode (event) {
+    if(event.target.checked == true) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'light')
+    }
+}
+
+toggleSwitch.addEventListener('change', switchMode);

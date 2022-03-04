@@ -18,6 +18,7 @@
     --on_background: #cfcfd8;
     --on_background_alt: #15141a;
     --background: #121212;
+    --accent: #2b2a33;
     --box_shadow: 0px 1px 2px rgba(251,251,254,0.2);
 }
 /* .dark {
@@ -539,7 +540,7 @@ opacity: 1;
   }
 
   input:checked + .slider {
-    background-color: #66bb6a;
+    background-color: var(--accent);
   }
 
   input:checked + .slider:before {
