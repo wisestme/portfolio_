@@ -286,6 +286,7 @@ header figure {
 
 .services {
     text-align: center;
+    color: var(--on_background);
 }
 
 .service_card:first-of-type {
