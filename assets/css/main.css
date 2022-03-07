@@ -570,6 +570,7 @@ footer > #wrapper {
     padding: 2rem;
     color: var(--on_primary);
     line-height: 1.4rem;
+    letter-spacing: 1px;
 }
 
 footer > #wrapper > * {
@@ -585,7 +586,7 @@ footer > #wrapper > * {
 }
 
 footer h2 {
-    margin-bottom: 0.2rem;
+    margin-bottom: 1.2rem;
     text-align: left;
 }
 
@@ -605,6 +606,17 @@ footer h2 {
 
 .footer_summary figcaption {
     text-align: center;
+}
+
+.footer_quick_links > a {
+    display: block;
+    font-weight: bold;
+    
+}
+
+.footer_services li,
+.footer_quick_links a {
+    margin-top: 0.5rem;
 }
 
 .test {
