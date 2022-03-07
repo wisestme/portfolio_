@@ -568,7 +568,7 @@ opacity: 1;
 footer > #wrapper {
     background-color: var(--primary_color);
     padding: 2rem;
-    color: var(--light);
+    color: var(--on_primary);
     line-height: 1.4rem;
 }
 
