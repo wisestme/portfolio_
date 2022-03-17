@@ -593,6 +593,10 @@ footer h2 {
 .footer_summary > .text {
     grid-column: 1/4;
     width: 90%;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    margin-top: 1rem;
 }
 
 .footer_summary figure {
