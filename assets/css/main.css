@@ -619,6 +619,10 @@ footer h2 {
     margin-top: 0.5rem;
 }
 
+.footer_contact p {
+    margin: 1rem 0;
+}
+
 .test {
     border: 2px solid red;
 }
